@@ -1,0 +1,19 @@
+$Text-Primary : rgb(226 232 240/1);
+$Text-Grey: rgb(148 163 184/1);
+$Text-Green: rgba(94 234 212/1);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  font-family: 'Inter';
+  scroll-behavior: smooth;
+  background: rgb(15 23 42/1);
+  overflow-x: hidden;
+}

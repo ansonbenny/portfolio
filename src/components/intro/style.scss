@@ -1,0 +1,90 @@
+@import '../../index.scss';
+
+.intro {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width:1080px) {
+        height: calc(100% - 14rem);
+    }
+
+    @media screen and (min-width:900px) and (max-width:1079px) {
+        height: calc(100% - 8rem);
+    }
+
+    @media screen and (max-width:850px) {
+        height: auto;
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: $Text-Primary;
+        font-weight: bolder;
+
+        @media screen and (max-width:600px) {
+            font-size: xx-large;
+        }
+    }
+
+    h3 {
+        margin: .5rem 0;
+        font-size: medium;
+        color: $Text-Primary;
+        font-size: large;
+    }
+
+    p {
+        max-width: 300px;
+        margin-top: 1rem;
+        color: $Text-Grey;
+    }
+
+    .resume {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 8rem;
+        height: 2.5rem;
+        background: rgba(23, 36, 64, 1);
+        color: $Text-Grey;
+        text-decoration: none;
+        margin-top: 1rem;
+        text-transform: uppercase;
+        font-size: small;
+        font-weight: bold;
+        border-radius: 10px;
+        transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .links {
+        margin-top: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+
+        @media screen and (max-width:850px) {
+            margin-top: 2rem;
+        }
+
+        a {
+            text-decoration: none;
+            background: none;
+            color: transparent;
+
+            .icon {
+                fill: $Text-Grey;
+                transition: all .3s ease-in-out;
+                -moz-transition: all .3s ease-in-out;
+
+                &:hover {
+                    fill: $Text-Primary;
+                }
+            }
+        }
+    }
+}

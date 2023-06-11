@@ -1,0 +1,46 @@
+.main {
+    position: relative;
+    padding: 1.5rem;
+
+    @media screen and (min-width:1080px) {
+        padding: 7rem;
+    }
+
+    @media screen and (min-width:900px) and (max-width:1079px) {
+        padding: 4rem;
+    }
+
+    .fixed-left {
+        position: fixed;
+        height: 100%;
+        width: 50%;
+        background: transparent;
+        z-index: 1000;
+
+        @media screen and (max-width:850px) {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+    }
+
+    .right {
+        background: transparent;
+        margin-left: 50%;
+
+        @media screen and (max-width:850px) {
+            margin-left: 0;
+        }
+    }
+}
+
+.pointer {
+    display: none;
+    width: 18rem;
+    height: 18rem;
+    position: absolute;
+    border-radius: 999px;
+    background: radial-gradient(rgba(29, 78, 216, 0.1), transparent 80%);
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
