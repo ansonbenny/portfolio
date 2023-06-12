@@ -1,5 +1,8 @@
+@import './index.scss';
+
 .main {
     position: relative;
+    height: auto;
     padding: 1.5rem;
 
     @media screen and (min-width:1080px) {
@@ -13,7 +16,7 @@
     .fixed-left {
         position: fixed;
         height: 100%;
-        width: 50%;
+        width: auto;
         background: transparent;
         z-index: 1000;
 
@@ -21,15 +24,29 @@
             width: 100%;
             display: block;
             height: auto;
+            position: relative;
+            margin-bottom: 4rem;
         }
     }
 
     .right {
         background: transparent;
-        margin-left: 50%;
+        margin-left: calc(50% - 1.5rem);
 
         @media screen and (max-width:850px) {
             margin-left: 0;
+        }
+    }
+
+    .title-sm {
+        display: none;
+
+        @media screen and (max-width:850px) {
+            display: block;
+            color: $Text-Primary;
+            text-transform: uppercase;
+            font-size: medium;
+            margin: 2rem 0;
         }
     }
 }
@@ -38,9 +55,15 @@
     display: none;
     width: 18rem;
     height: 18rem;
-    position: absolute;
-    border-radius: 999px;
-    background: radial-gradient(rgba(29, 78, 216, 0.1), transparent 80%);
+    position: fixed;
+    background: radial-gradient(rgba(29, 78, 216, 0.15), transparent 80%);
     transform: translate(-50%, -50%);
-    z-index: 0;
+    border-radius: 9999px;
+    pointer-events: none;
+    overflow: hidden;
+
+    @media screen and (max-width:850px) {
+        width: 15rem;
+        height: 15rem;
+    }
 }

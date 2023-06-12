@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { Intro } from "./components";
+import { About, Experience, Intro, Projects, Skills } from "./components";
 import "./App.scss";
 
 function App() {
@@ -23,11 +23,16 @@ function App() {
 
   return (
     <section className="main">
-      <div ref={ref} className="pointer" />
       <div className="fixed-left">
         <Intro />
       </div>
-      <div className="right"></div>
+      <div className="right">
+        <About />
+        <Skills />
+        <Projects />
+        <Experience />
+      </div>
+      <div ref={ref} className="pointer" />
     </section>
   );
 }

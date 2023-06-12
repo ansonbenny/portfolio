@@ -1,5 +1,5 @@
 import React from "react";
-import { GithubSvg, HashnodeSvg, LinkedinSvg } from "../../assets";
+import { GithubSvg, HashnodeSvg, LinkedinSvg, Resume } from "../../assets";
 import "./style.scss";
 
 const Intro = () => {
@@ -7,23 +7,23 @@ const Intro = () => {
     <section className="intro">
       <h1>Anson Benny</h1>
       <h3>Mern Stack Developer</h3>
-      <p>
-        I build accessible, inclusive products and digital experiences for the
-        web.
-      </p>
+      <p>I build accessible, highly quality mern projects.</p>
 
-      <a href="" className="resume" target="_blank">
+      <a href={Resume} className="resume" target="_blank">
         My Resume
       </a>
 
       <div className="links">
-        <a href="">
+        <a href="https://github.com/ansonbenny/" target="_blank">
           <GithubSvg width={"25px"} height={"25px"} class_name={"icon"} />
         </a>
-        <a href="">
+        <a href="https://ansonbenny.hashnode.dev/" target="_blank">
           <HashnodeSvg width={"25px"} height={"25px"} class_name={"icon"} />
         </a>
-        <a href="">
+        <a
+          href="https://www.linkedin.com/in/anson-benny-502961238/"
+          target="_blank"
+        >
           <LinkedinSvg width={"25px"} height={"25px"} class_name={"icon"} />
         </a>
       </div>

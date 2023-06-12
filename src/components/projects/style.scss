@@ -1,0 +1,168 @@
+@import '../../index.scss';
+
+.projects {
+    margin-bottom: 3rem;
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        a {
+            text-decoration: none;
+            color: transparent;
+
+            &:hover {
+                color: transparent;
+                text-decoration: none;
+            }
+
+            .card {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+                padding: 1.5rem;
+                border-radius: 5px;
+                transition: all .5s ease-in-out;
+                -moz-transition: all .5s ease-in-out;
+
+                @media screen and (max-width:850px) {
+                    padding: 0;
+                }
+
+                @media screen and (max-width:600px) {
+                    flex-direction: column;
+                    gap: 2rem;
+                }
+
+                &:hover {
+                    background: rgba(23, 36, 64, .5);
+                    backdrop-filter: blur(1px);
+
+                    .cover img {
+                        border-color: $Text-Primary;
+                    }
+
+                    .content {
+                        h1 {
+                            color: $Text-Green;
+                        }
+
+                        .svg_fill {
+                            transform: translate(2px, -2px);
+                            fill: $Text-Green;
+                        }
+                    }
+
+                    @media screen and (max-width:850px) {
+                        background: transparent;
+                        backdrop-filter: unset;
+
+                        .cover img {
+                            border-color: $Text-Primary;
+                        }
+
+                        .content {
+                            h1 {
+                                color: $Text-Green;
+                            }
+
+                            .svg_fill {
+                                transform: translate(2px, -2px);
+                                fill: $Text-Green;
+                            }
+                        }
+                    }
+                }
+
+                .cover {
+                    img {
+                        width: 8rem;
+                        height: 5rem;
+                        border-radius: 5px;
+                        object-fit: cover;
+                        object-position: center;
+                        border: 2px solid $Text-Grey;
+                        transition: all .5s ease-in-out;
+                        -moz-transition: all .5s ease-in-out;
+                    }
+                }
+
+                .content {
+                    h1 {
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                        margin-bottom: .5rem;
+                        color: $Text-Primary;
+                        font-size: medium;
+                        transition: all .5s ease-in-out;
+                        -moz-transition: all .5s ease-in-out;
+                    }
+
+                    .svg_fill {
+                        fill: $Text-Grey;
+                        transition: all .5s ease-in-out;
+                        -moz-transition: all .5s ease-in-out;
+                    }
+
+                    p {
+                        line-height: 1.5rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 4;
+                        line-clamp: 4;
+                        -webkit-box-orient: vertical;
+                        color: $Text-Grey;
+                        font-size: 15px;
+                    }
+
+                    .techs {
+                        margin-top: .5rem;
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: .5rem;
+
+                        button {
+                            padding: .5rem 1rem;
+                            border: none;
+                            border-radius: 999px;
+                            color: $Text-Green;
+                            background: rgba(45, 212, 191, .1);
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .view-full {
+        position: relative;
+        margin-top: 4rem;
+        margin-left: 1.5rem;
+
+        @media screen and (max-width:850px) {
+            margin-left: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: $Text-Primary;
+            font-size: medium;
+            font-weight: bold;
+            padding-bottom: .2rem;
+            border-bottom: 2px solid transparent;
+            transition: all .3s ease-in-out;
+            -moz-transition: all .3s ease-in-out;
+
+            &:hover {
+                border-bottom: 2px solid $Text-Green;
+            }
+        }
+    }
+}
