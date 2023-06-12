@@ -59,7 +59,11 @@ const Projects = () => {
                 <div className="content">
                   <h1>
                     {obj?.title}&nbsp;
-                    <ArrowSvg width={"16px"} height={"16px"} class_name={'svg_fill'} />
+                    <ArrowSvg
+                      width={"16px"}
+                      height={"16px"}
+                      class_name={"svg_fill"}
+                    />
                   </h1>
                   <p>{obj?.details}</p>
 
@@ -76,7 +80,10 @@ const Projects = () => {
       </div>
 
       <div className="view-full">
-        <a href="/" target="_blank">
+        <a
+          href="https://github.com/ansonbenny?tab=repositories"
+          target="_blank"
+        >
           View Full Projects
         </a>
       </div>
