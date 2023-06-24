@@ -13,10 +13,15 @@ const Experience = () => {
           <div className="content">
             <h1>Full Stack</h1>
             <p>
-              Stack used in react with javascript & node js. MongoDB used as
-              database. Implemented More Api and Js Libraries. For reducing
-              programming length in backend used express js framework of
-              Javascript.
+              Designed and implemented web applications such as e-commerce sites
+              for clients.
+              <br />
+              Developed fully responsive web pages for clients.
+              <br />
+              Updated website front and backend to improve SEO and security
+              using best practices.
+              <br />
+              Designed and Developed Static Website For PHP Developer
             </p>
 
             <div className="techs">
