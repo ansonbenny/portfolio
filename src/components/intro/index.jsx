@@ -21,7 +21,7 @@ const Intro = () => {
           <HashnodeSvg width={"25px"} height={"25px"} class_name={"icon"} />
         </a>
         <a
-          href="https://www.linkedin.com/in/anson-benny-502961238/"
+          href="https://www.linkedin.com/in/anson-benny/"
           target="_blank"
         >
           <LinkedinSvg width={"25px"} height={"25px"} class_name={"icon"} />
