@@ -6,10 +6,15 @@ const Skills = () => {
     <section className="skills">
       <h3 className="title-sm">Skills</h3>
       <div className="tags">
-        <button>MongoDB</button>
-        <button>ExpressJs</button>
+        <button>MERN</button>
+        <button>WebSockets</button>
+        <button>Socket.IO</button>
+        <button>WebRTC</button>
+        <button>PeerJS</button>
         <button>ReactJs</button>
         <button>NodeJs</button>
+        <button>MongoDB</button>
+        <button>ExpressJs</button>
         <button>JavaScript</button>
         <button>Redux</button>
         <button>NextJs</button>

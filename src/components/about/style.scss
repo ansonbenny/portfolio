@@ -10,7 +10,10 @@
 
     p {
         color: $Text-Grey;
+        font-weight: lighter;
+        font-style: italic;
         font-size: medium;
-        line-height: 1.8rem;
+        line-height: 1.5rem;
+        text-transform: capitalize;
     }
 }

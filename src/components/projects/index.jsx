@@ -5,7 +5,17 @@ import "./style.scss";
 const Projects = () => {
   const Items = [
     {
-      title: "Music Platform - Create Your Own Playlist",
+      title: "Social Media WebApp",
+      details: `This project is a Social Media platform, 
+      It's made for live private/group chat & Video/Audio Call, 
+      project allow to share stories. Socket.io/WebSocket used for live chat , 
+      WebRTC / PeerJs (for peer 2 peer) used for live Video/Audio Calls.`,
+      techs: ["WebRTC", "Socket.IO", "WebSocket", "Mern"],
+      img: "https://ik.imagekit.io/avkzxljm7/Portfolio/social_media.png?updatedAt=1695894837837",
+      url: "https://github.com/ansonbenny/Social-Media",
+    },
+    {
+      title: "Music Streamer - Create Your Own Playlist",
       details: `This project is a digital music platform, It's
       made for listening to music and making your favorite music
       collection. Spotify API is used to get tracks and albums,
@@ -13,7 +23,7 @@ const Projects = () => {
       project is made in the MERN stack.`,
       techs: ["Mern", "Javascript", "Spotify Api"],
       img: "https://ik.imagekit.io/avkzxljm7/Portfolio/Musicon.jpg?updatedAt=1685211821322",
-      url: "",
+      url: "https://github.com/ansonbenny/Music-Streamer",
     },
     {
       title: "ChatGPT - Clone of ChatGPT",
@@ -22,7 +32,7 @@ const Projects = () => {
       human-like conversations.`,
       techs: ["Mern", "Javascript", "OpenAi Api"],
       img: "https://ik.imagekit.io/avkzxljm7/Portfolio/ChatGPT.jpg?updatedAt=1685211707960",
-      url: "",
+      url: "https://github.com/ansonbenny/ChatGPT.git",
     },
     {
       title: "Dall-E - Clone of Dall-E",
@@ -31,7 +41,7 @@ const Projects = () => {
       descriptions).`,
       techs: ["Mern", "Javascript", "OpenAi Api"],
       img: "https://ik.imagekit.io/avkzxljm7/Portfolio/DALL-E.jpg?updatedAt=1685228911697",
-      url: "",
+      url: "https://github.com/ansonbenny/DALL-E.git",
     },
     {
       title: "E-commerce - Multi Vendor E-commerce Site",
@@ -40,7 +50,7 @@ const Projects = () => {
       website.`,
       techs: ["Mern", "Javascript", "OpenAi Api"],
       img: "https://ik.imagekit.io/avkzxljm7/Portfolio/ecom.jpg?updatedAt=1685228639581",
-      url: "",
+      url: "https://github.com/ansonbenny/MultiVendor-Ecommerce.git",
     },
   ];
 

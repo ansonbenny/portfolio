@@ -20,6 +20,7 @@
         font-size: 3rem;
         color: $Text-Primary;
         font-weight: bolder;
+        text-transform: capitalize;
 
         @media screen and (max-width:600px) {
             font-size: xx-large;
@@ -28,15 +29,17 @@
 
     h3 {
         margin: .5rem 0;
-        font-size: medium;
+        font-size: small;
+        text-transform: uppercase;
+        font-style: italic;
         color: $Text-Primary;
-        font-size: large;
     }
 
     p {
         max-width: 300px;
         margin-top: 1rem;
         color: $Text-Grey;
+        text-transform: capitalize;
     }
 
     .resume {
