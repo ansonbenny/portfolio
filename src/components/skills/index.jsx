@@ -14,8 +14,10 @@ const Skills = () => {
         <button>ReactJs</button>
         <button>NodeJs</button>
         <button>MongoDB</button>
+        <button>Mongoose</button>
         <button>ExpressJs</button>
         <button>JavaScript</button>
+        <button>TypeScript</button>
         <button>Redux</button>
         <button>NextJs</button>
         <button>Git</button>

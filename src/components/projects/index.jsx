@@ -48,7 +48,7 @@ const Projects = () => {
       details: `Multi Vendor e-commerce website for online shopping, it's
       allows multi vendor features to allow sellers to sell on this
       website.`,
-      techs: ["Mern", "Javascript", "OpenAi Api"],
+      techs: ["Mern", "Javascript"],
       img: "https://ik.imagekit.io/avkzxljm7/Portfolio/ecom.jpg?updatedAt=1685228639581",
       url: "https://github.com/ansonbenny/MultiVendor-Ecommerce.git",
     },
