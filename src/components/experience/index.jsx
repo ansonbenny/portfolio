@@ -26,10 +26,15 @@ const Experience = () => {
 
             <div className="techs">
               <button>Full Stack</button>
+              <button>MERN</button>
+              <button>React</button>
+              <button>NextJs</button>
+              <button>Mongoose</button>
               <button>MongoDB</button>
               <button>ExpressJs</button>
               <button>NodeJs</button>
               <button>JavaScript</button>
+              <button>TypeScript</button>
               <button>HTML & CSS</button>
             </div>
           </div>
