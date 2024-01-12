@@ -4,6 +4,9 @@
     position: relative;
     height: auto;
     padding: 1.5rem;
+    max-width: 90rem;
+    width: auto;
+    margin: 0 auto;
 
     @media screen and (min-width:1080px) {
         padding: 7rem;
